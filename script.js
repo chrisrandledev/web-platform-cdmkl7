@@ -1,4 +1,4 @@
-function scrollAction(action) {
+var scrollAction = function (action) {
   if (action === 1) {
     console.log('Scrolling parent to TOP!');
   } else if (action === 2) {
@@ -7,4 +7,6 @@ function scrollAction(action) {
   } else {
     throw new Error('Unable to handle action.');
   }
-}
+};
+
+console.log('HELLO THERE!');
