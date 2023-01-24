@@ -23,28 +23,29 @@
       <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>CLK Iframe Page</h1>
+      <h1>Main Iframe Control Page</h1>
+      <p>
+        You should be able to scroll to top and bottom of iframe using the
+        buttons.
+      </p>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <div class="panel panel-blue">This is a column.</div>
+          <div class="col-3">
+            <button class="panel panel-blue">Parent Top</button>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="panel panel-purple">This is a column.</div>
+          <div class="col-3">
+            <button class="panel panel-purple">Parent Bottom</button>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="panel panel-blue">This is a column.</div>
+          <div class="col-3">
+            <button class="panel panel-blue">Child Top</button>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="panel panel-purple">This is a column.</div>
+          <div class="col-3">
+            <button class="panel panel-purple">Child Bottom</button>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-6 col-lg-6">
-            <div class="panel panel-blue">This is a column.</div>
-          </div>
-          <div class="col-sm-6 col-lg-6">
+          <div class="col-9 offset-3">
             <div class="panel panel-purple"></div>
             <iframe src="page2.html" />
           </div>
@@ -53,4 +54,3 @@
     </main>
   </body>
 </html>
-a
