@@ -3,20 +3,21 @@ function test() {
 }
 
 function scrollAction(action) {
-  console.log(action);
-
+  console.log('Action: ' + action);
   switch (action) {
     case 1:
       window.parent.scrollTo(0, 0);
       break;
     case 2:
-      window.parent.scrollTo(0, element.document.body.scrollHeight);
+      window.parent.scrollTo(0, window.parent.document.body.scrollHeight);
       break;
     case 3:
-      self.scrollTo(0, 0);
+      document.getElementById('iframe1').scrollTo(0, 0);
       break;
     case 4:
-      self.scrollTo(0, element.document.body.scrollHeight);
+      document
+        .getElementById('iframe1')
+        .scrollTo(0, window.parent.document.body.scrollHeight);
       break;
     default:
       console.error('An error occurred.');
