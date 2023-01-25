@@ -12,7 +12,7 @@ function scrollAction(action) {
       window.parent.scrollTo(0, window.parent.document.body.scrollHeight);
       break;
     case 3:
-      document.getElementById('iframe1').scrollTo(0, 0);
+      document.getElementById('iframe1').contentWindow.document.scrollTo(0, 0);
       break;
     case 4:
       document
