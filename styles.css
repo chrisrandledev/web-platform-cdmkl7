@@ -46,5 +46,13 @@ h1 {
 }
 
 .tall {
-  height: 100em;  
+  height: 100em;
+}
+
+.tall2 {
+  height: 50em;
+}
+
+button {
+  width: 5em;
 }
