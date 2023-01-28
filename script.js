@@ -1,7 +1,3 @@
-function test() {
-  alert('TEST');
-}
-
 function scrollAction(action) {
   console.log('Action: ' + action);
   var iframe = document.getElementById('iframe1');
